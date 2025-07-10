@@ -1,0 +1,19 @@
+{
+  "mintAddress": "AcNTLnVMBo6CPoTMC3qmskS4RLf3DPL9iVd83ea5iVTi",
+  "transactionSignatures": [
+    "66iRvS27cRvMfh1DtorFAaSArmePA3iJT7RbzvYZsFm27hLzjNkM624gDAN4jrGsyv6fvbwBvxNintqppJqCpPcx",
+    "3W7aGecDorbij6NFsuks1BTSFHrjpjJntLCchWTBs2KkqqS1qpipj8g8s2udEpZTs7gX97D1J5hSKdeFQAeKLe9E"
+  ],
+  "config": {
+    "tokenName": "USD Coin Test",
+    "tokenSymbol": "USDC-TEST",
+    "decimals": 6,
+    "mintAuthority": "C37LN1wFqMTXu6Tv4HPdWu8okuvGmVC7EkemrkQQAjtX",
+    "rateAuthority": "C37LN1wFqMTXu6Tv4HPdWu8okuvGmVC7EkemrkQQAjtX",
+    "interestRateBasisPoints": 500,
+    "initialSupply": 1000000,
+    "totalSupply": "1000000000000",
+    "lastUpdateTimestamp": 1752117876
+  },
+  "deploymentTime": "2025-07-10T03:24:39.330Z"
+}

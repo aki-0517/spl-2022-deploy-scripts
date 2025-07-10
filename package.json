@@ -1,0 +1,34 @@
+{
+  "name": "mint-scripts",
+  "version": "1.0.0",
+  "description": "Scripts for deploying yield-bearing stablecoin test tokens to Solana devnet",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "ts-node deploy-interactive.ts",
+    "deploy:usdc": "ts-node -e \"import('./deploy-yield-bearing-stablecoin').then(m => { const d = new m.YieldBearingStablecoinDeployer(); d.requestAirdrop().then(() => d.deploy(m.STABLECOIN_CONFIGS.USDC_TEST)).then(console.log).catch(console.error); })\"",
+    "deploy:usdt": "ts-node -e \"import('./deploy-yield-bearing-stablecoin').then(m => { const d = new m.YieldBearingStablecoinDeployer(); d.requestAirdrop().then(() => d.deploy(m.STABLECOIN_CONFIGS.USDT_TEST)).then(console.log).catch(console.error); })\"",
+    "deploy:dai": "ts-node -e \"import('./deploy-yield-bearing-stablecoin').then(m => { const d = new m.YieldBearingStablecoinDeployer(); d.requestAirdrop().then(() => d.deploy(m.STABLECOIN_CONFIGS.DAI_TEST)).then(console.log).catch(console.error); })\"",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.3.9",
+    "@solana/web3.js": "^1.87.6",
+    "fastestsmallesttextencoderdecoder": "^1.0.22"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "solana",
+    "token",
+    "stablecoin",
+    "yield-bearing",
+    "devnet",
+    "token-2022"
+  ],
+  "author": "",
+  "license": "MIT"
+}
